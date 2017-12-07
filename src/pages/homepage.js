@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { TabBar } from 'antd-mobile';
+import Life from './life.js';
+import My from './my.js';
+import Friend from './friend.js';//Module not found: Can't resolve './pages/friend.js' in 'D:\aa\antm-demo\src\pages' lujin problem 
+import Koubei from './koubei.js';
 
-class TabBarExample extends React.Component {
+class Homepage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,35 +18,15 @@ class TabBarExample extends React.Component {
 
   renderContent(pageText) {
     return (
-      <div style={{ backgroundColor: 'white', height: '100%', textAlign: 'center' }}>
-        <div style={{ paddingTop: 60 }}>Clicked “{pageText}” tab， show “{pageText}” information</div>
-        <a style={{ display: 'block', marginTop: 40, marginBottom: 20, color: '#108ee9' }}
-          onClick={(e) => {
-            e.preventDefault();
-            this.setState({
-              hidden: !this.state.hidden,
-            });
-          }}
-        >
-          Click to show/hide tab-bar
-        </a>
-        <a style={{ display: 'block', marginBottom: 600, color: '#108ee9' }}
-          onClick={(e) => {
-            e.preventDefault();
-            this.setState({
-              fullScreen: !this.state.fullScreen,
-            });
-          }}
-        >
-          Click to switch fullscreen
-        </a>
+      <div >
+        <div style={{ paddingTop: 60 }}>{pageText}</div>
       </div>
     );
   }
 
   render() {
     return (
-      <div style={this.state.fullScreen ? { position: 'fixed', height: '100%', width: '100%', top: 0 } : { height: 400 }}>
+      <div style={{ position: 'fixed', height: '100%', width: '100%', top: 0 }}> {/*/fullScreen show */ }
         <TabBar
           unselectedTintColor="#949494"
           tintColor="#33A3F4"
@@ -73,7 +57,7 @@ class TabBarExample extends React.Component {
             }}
             data-seed="logId"
           >
-            {this.renderContent('Life')}
+            {this.renderContent(<Life/>)}
           </TabBar.Item>
           <TabBar.Item
             icon={
@@ -101,7 +85,7 @@ class TabBarExample extends React.Component {
             }}
             data-seed="logId1"
           >
-            {this.renderContent('Koubei')}
+            {this.renderContent(<Koubei/>)}
           </TabBar.Item>
           <TabBar.Item
             icon={
@@ -128,7 +112,7 @@ class TabBarExample extends React.Component {
               });
             }}
           >
-            {this.renderContent('Friend')}
+            {this.renderContent(<Friend/>)}
           </TabBar.Item>
           <TabBar.Item
             icon={{ uri: 'https://zos.alipayobjects.com/rmsportal/asJMfBrNqpMMlVpeInPQ.svg' }}
@@ -142,7 +126,7 @@ class TabBarExample extends React.Component {
               });
             }}
           >
-            {this.renderContent('My')}
+            {this.renderContent(<My/>)}
           </TabBar.Item>
         </TabBar>
       </div>
@@ -150,4 +134,4 @@ class TabBarExample extends React.Component {
   }
 }
 
-export default TabBarExample;
+export default Homepage;
