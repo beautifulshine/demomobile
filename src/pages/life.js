@@ -26,7 +26,7 @@ class Life  extends React.Component {//class component name is start with upper 
           Undergraduate<List.Item.Brief>Auxiliary text</List.Item.Brief>
         </CheckboxItem>
       </List>
-
+    
       <Flex>
         <Flex.Item>
           <AgreeItem data-seed="logId" onChange={e => console.log('checkbox', e)}>
