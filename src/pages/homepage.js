@@ -6,7 +6,8 @@ import My from './my.js';
 import Friend from './friend.js';//Module not found: Can't resolve './pages/friend.js' in 'D:\aa\antm-demo\src\pages' lujin problem 
 import Koubei from './koubei.js';
 import Ohter from './other';
-
+import Zmdeng from './Carousel';
+import MyComp from './test';
 class Homepage extends React.Component {
   constructor(props) {
     super(props);
@@ -152,7 +153,7 @@ class Homepage extends React.Component {
             }}
 			 data-seed="logId4"
           >
-            {this.renderContent(<Ohter/>)}
+            {this.renderContent(<MyComp/>)}
           </TabBar.Item>
         </TabBar>
       </div>
