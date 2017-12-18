@@ -1,4 +1,4 @@
-import React from 'react';
+/**import React from 'react';
 import ReactDOM from 'react-dom';
 class MyComp extends React.Component {
     componentDidMount() {
@@ -16,3 +16,4 @@ class MyComp extends React.Component {
     }
   }
   export default MyComp;
+  */

@@ -1,4 +1,4 @@
-import React from 'react';
+/**import React from 'react';
 import ReactDOM from 'react-dom';
 import { List, Checkbox, Flex } from 'antd-mobile';
 import Zmdeng from './Carousel';
@@ -23,3 +23,4 @@ class Life  extends React.Component {
   }
 }
 export default Life ;
+*/

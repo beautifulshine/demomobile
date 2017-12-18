@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+/**import React,{Component} from 'react';
 import {Text,ListView,NavBar,Icon,Button} from "antd-mobile";
 import ReactDOM from "react-dom";
 import axios from "axios";
@@ -63,5 +63,10 @@ const sortNumbers = (...numbers) => numbers.sort();
   }
 	  
 }  
+console.log(...[1, 2, 3])
+// 1 2 3
 
+console.log(1, ...[2, 3, 4], 5)
+// 1 2 3 4 5
 export default Two;
+*/

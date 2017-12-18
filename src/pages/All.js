@@ -1,11 +1,10 @@
-import React,{Component} from 'react';
-import {Text,ListView,NavBar,Icon,Button} from "antd-mobile";
-import ReactDOM from "react-dom";
-import axios from "axios";
-import qs from "qs";
+/**import React from 'react';
+import {Button} from "antd-mobile";
+//import ReactDOM from "react-dom";
+
 //import Conf from "../conf/Conf";
 import { Flex, WhiteSpace } from 'antd-mobile';
-import { List, InputItem, Switch, Stepper, Range } from 'antd-mobile';
+import { List} from 'antd-mobile';
 //import { createForm } from 'rc-form';
 
 const Item = List.Item;
@@ -581,4 +580,4 @@ export default class All extends React.Component{
           </div>
       );  
   }  
-} 
+} */

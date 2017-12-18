@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+/**import React, { Component } from 'react';
 import logo from './logo.svg';
 import styles from './App.css';
 //import { Button, Icon } from 'antd-mobile';
@@ -17,6 +17,7 @@ class Test extends Component {
 		
     
 } */
+/**
 	 render() {
     return (
       <div>
@@ -43,6 +44,7 @@ class Test extends Component {
       </div>
     );
   } */
+  /**
 }
 
-export default Test;
+export default Test;*/
